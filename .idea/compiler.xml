@@ -6,10 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="tanhua-project-sso" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="tanhua-project" target="1.8" />
+      <module name="tanhua-project-sso" target="1.8" />
       <module name="tanhua-project-test" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="tanhua-project-sso" options="-parameters" />
+    </option>
   </component>
 </project>
